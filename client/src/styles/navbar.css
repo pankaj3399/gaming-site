@@ -2,7 +2,46 @@
     background-color: #0A1426;
     display: flex;
     color: white;
-    padding: 10px 20px;
-    justify-content: space-evenly;
+    padding: 16px 30px;
+    justify-content: space-between;
     font-weight: 600;
+    font-size: 16px;
+    overflow-x: hidden;
+
+    .sub-nav-1 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sub-nav-2 {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .btn {
+        background: linear-gradient(90deg, #1199fa, #11d0fa);
+        border-radius: 4px;
+        line-height: 22px;
+        padding: 8px 24px;
+    }
+
+    .icon-container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 5px;
+    }
+
+    .input {
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 8px 40px;
+        border-radius: 20px;
+    }
+    .input::placeholder {
+        color: rgb(225, 225, 225);
+    }
+    
 }
