@@ -1,47 +1,106 @@
 .Navbar {
-    background-color: #0A1426;
-    display: flex;
-    color: white;
-    padding: 16px 30px;
-    justify-content: space-between;
-    font-weight: 600;
-    font-size: 16px;
-    overflow-x: hidden;
-
-    .sub-nav-1 {
+    .extended-navbar {
+        background-color: #0A1426;
         display: flex;
-        align-items: center;
-        gap: 20px;
+        color: white;
+        padding: 16px 30px;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 16px;
+        overflow-x: hidden;
+
+
+        .sub-nav-1 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sub-nav-2 {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, #1199fa, #11d0fa);
+            border-radius: 4px;
+            line-height: 22px;
+            padding: 8px 24px;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            gap: 5px;
+        }
+
+        .input {
+            background-color: transparent;
+            border: 1px solid white;
+            padding: 8px 40px;
+            border-radius: 20px;
+        }
+
+        .input::placeholder {
+            color: rgb(225, 225, 225);
+        }
     }
 
-    .sub-nav-2 {
+    .collapsed-navbar {
+        background-color: #0A1426;
         display: flex;
-        gap: 25px;
-        align-items: center;
+        color: white;
+        padding: 16px 10px;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 16px;
+        overflow-x: hidden;
+
+        .dropdown {
+            background-color: #000;
+            position: absolute;
+            top: 56px;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            z-index: 1;
+        }
+
+        .sub-nav-1 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sub-nav-2 {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
     }
 
-    .btn {
-        background: linear-gradient(90deg, #1199fa, #11d0fa);
-        border-radius: 4px;
-        line-height: 22px;
-        padding: 8px 24px;
+    @media screen and (max-width: 1200px) {
+        .extended-navbar {
+            display: none;
+        }
     }
 
-    .icon-container {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        gap: 5px;
+    @media screen and (min-width: 1201px) {
+        .collapsed-navbar {
+            display: none;
+        }
     }
 
-    .input {
-        background-color: transparent;
-        border: 1px solid white;
-        padding: 8px 40px;
-        border-radius: 20px;
-    }
-    .input::placeholder {
-        color: rgb(225, 225, 225);
-    }
-    
+
 }
